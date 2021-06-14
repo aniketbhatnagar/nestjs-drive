@@ -1,0 +1,8 @@
+interface Hero {
+    id: ID!
+    name: String!
+}
+
+extend type Query {
+  hero(heroId: ID!): Hero
+}
