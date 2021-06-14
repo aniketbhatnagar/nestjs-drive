@@ -7,13 +7,12 @@
 
 /* tslint:disable */
 /* eslint-disable */
+export interface IQuery {
+    hello(name: string): string | Promise<string>;
+    hero(heroId: string): Hero | Promise<Hero>;
+}
+
 export interface Hero {
     id: string;
     name: string;
-}
-
-export abstract class IQuery {
-    abstract hello(name: string): string | Promise<string>;
-
-    abstract hero(heroId: string): Hero | Promise<Hero>;
 }

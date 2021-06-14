@@ -7,9 +7,6 @@ import { HeroModule } from './hero/hero.module';
   imports: [
     GraphQLModule.forRoot({
       typePaths: ['./**/*.graphql'],
-      definitions: {
-        outputAs: 'class',
-      }
     }),
     HelloModule,
     HeroModule,
